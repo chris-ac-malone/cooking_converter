@@ -24,7 +24,7 @@ export default function LoginScreen() {
       <Text>Username</Text>
       <TextInput style={ styles.inputField }></TextInput>
       <Text>Password</Text>
-
+      <TextInput style={ styles.inputField }></TextInput>
     </View>
   )
 };
@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
   },
   inputField: {
     backgroundColor: 'white',
-    height: 40,
+    height: 30,
     alignItems: 'center',
-    width: 10,
+    width: 200,
   },
 });

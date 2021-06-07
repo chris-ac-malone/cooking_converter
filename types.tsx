@@ -23,6 +23,7 @@ export type DrawerParamList = {
 
 export type ProfileParamList = {
   ProfileScreen: undefined;
+  LoginScreen: undefined;
 };
 
 export type SettingsParamList = {

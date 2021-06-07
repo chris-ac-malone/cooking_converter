@@ -8,12 +8,13 @@ export default {
         screens: {
           Profile: {
             screens: {
-              ProfileScreen: 'profile'
+              ProfileScreen: 'profile',
+              LoginScreen: 'login'
             }
           },
           Settings: {
             screens: {
-              SettingsScreen: 'Settings'
+              SettingsScreen: 'settings'
             }
           },
           Clients: {

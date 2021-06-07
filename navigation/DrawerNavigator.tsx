@@ -24,10 +24,6 @@ export default function DrawerNavigator() {
         name="Home"
         component={HomeNavigator}
       />
-        <Drawer.Screen
-        name="Login"
-        component={LoginNavigator}
-      />
     </Drawer.Navigator>
   );
 }
@@ -41,8 +37,12 @@ function ProfileNavigator() {
         name="ProfileScreen"
         component={ProfileScreen}
         options={{
-          title: 'My Profile',
+          title: 'Profile',
         }}
+      />
+      <ProfileStack.Screen 
+        name="LoginScreen"
+        component={LoginScreen}
       />
     </ProfileStack.Navigator>
   )
@@ -77,21 +77,5 @@ function HomeNavigator() {
         }}
       />
     </HomeStack.Navigator>
-  )
-}
-
-const LoginStack = createStackNavigator<LoginParamList>();
-
-function LoginNavigator() {
-  return (
-    <LoginStack.Navigator>
-      <LoginStack.Screen
-        name="LoginScreen"
-        component={LoginScreen}
-        options={{
-          title: 'Login',
-        }}
-      />
-    </LoginStack.Navigator>
   )
 }

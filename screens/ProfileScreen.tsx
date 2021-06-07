@@ -6,9 +6,12 @@ import { Text, View } from '../components/Themed';
 import MenuIcon from '../components/MenuIcon';
 import { useEffect } from 'react';
 import main from '../styles/main';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+
 
 export default function ProfileScreen() {
   const navigation = useNavigation();
+  const onPress = () => navigation.navigate("LoginScreen");
 
   useEffect(() => {
     navigation.setOptions({
@@ -25,6 +28,9 @@ export default function ProfileScreen() {
       >
         Profile
       </Text>
+      <TouchableOpacity onPress={ onPress }>
+        <Text>Login</Text>
+      </TouchableOpacity>
     </View>
   )
 };
