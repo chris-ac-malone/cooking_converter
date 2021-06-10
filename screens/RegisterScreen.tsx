@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import main from '../styles/main';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default function LoginScreen() {
+export default function RegisterScreen() {
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -21,9 +21,11 @@ export default function LoginScreen() {
 
   return (
     <View style={main.centered}>
-      <Text>Username</Text>
+      <Text>Pick a Username:</Text>
       <TextInput style={ styles.inputField }></TextInput>
-      <Text>Password</Text>
+      <Text>{"\n\n"}Choose a Password:</Text>
+      <TextInput secureTextEntry={true} style={ styles.inputField }></TextInput>
+      <Text>Re-enter Password:</Text>
       <TextInput secureTextEntry={true} style={ styles.inputField }></TextInput>
     </View>
   )

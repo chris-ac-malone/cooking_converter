@@ -7,6 +7,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import { DrawerParamList, ProfileParamList, SettingsParamList, HomeParamList, LoginParamList } from '../types';
+import RegisterScreen from '../screens/RegisterScreen';
 
 const Drawer = createDrawerNavigator<DrawerParamList>();
 
@@ -43,6 +44,16 @@ function ProfileNavigator() {
       <ProfileStack.Screen 
         name="LoginScreen"
         component={LoginScreen}
+        options={{
+          title: 'Login',
+        }}
+      />
+      <ProfileStack.Screen 
+        name="RegisterScreen"
+        component={RegisterScreen}
+        options={{
+          title: 'Registration',
+        }}
       />
     </ProfileStack.Navigator>
   )
